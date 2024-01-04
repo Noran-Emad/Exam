@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="page1.css">
+    <script src="jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div id="container1">
+
+        <form id="myform" method="get">
+            <label for="firstName">First name :</label>
+            <input type="text" id="firstName" class="name" >
+            <span class="nameSpan"></span>
+
+            <label for="lastName">Last name :</label>
+            <input type="text" id="lastName" class="name">
+            <span class="nameSpan"></span>
+
+            <label for="e-mail">Email : </label>
+            <input type="text" id="e-mail" onchange="checkEmail(event)">
+            <span id="emailSpan"></span>
+
+            <label for="pass">Password : </label>
+            <input type="password" id="pass" onchange="checkPassword(event)">
+            <span id="passSpan"></span>
+
+            <label for="pass2">Re-enter password : </label>
+            <input type="password" id="pass2" onchange="checkPassword2(event)">
+            <span id="pass2Span"></span>
+
+            <input type="submit" value="Sign up" id="signBtn">
+        </form>
+    </div>
+    <script src="page1.js"></script>
+</body>
+
+</html>

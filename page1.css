@@ -1,0 +1,48 @@
+:root {
+    --basecolor: #040458;
+    --btn-color: #bb004e;
+}
+
+#container1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--basecolor);
+    color: rgb(212, 212, 212);
+}
+
+#myform {
+    padding: 20px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+#myform>label {
+    text-align: center;
+    padding-right: 10px;
+}
+
+#myform>input {
+    padding: 8px;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+#myform>input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: auto;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: white;
+}
+
+#myform>span {
+    color: red;
+    display: none;
+}
